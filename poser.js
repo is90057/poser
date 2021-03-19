@@ -3,9 +3,6 @@ $('body').append('<div style="position: relative;top: 50%;z-index: 99999; width:
     <div id="poserButton"> \
         <button type="button" style="margin: 5px;">是啦！</button> \
         <button type="button" style="margin: 5px;">哈哈哈哈</button> \
-        <button type="button" style="margin: 5px;">凸！</button> \
-        <button type="button" style="margin: 5px;">XD</button> \
-        <button type="button" style="margin: 5px;">881</button> \
     </div> \
     <hr> \
     <div id="poser_set" style="position: relative;left: 135px;font-size:small;"> \
