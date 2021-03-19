@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>Poser extensions Popup</title>
+
+    <style>
+        body {
+            height: 300px;
+            width: 300px;
+            padding: 0;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("but1").click(function () {
+                let array = [];
+                array.push($("#name").val());
+                localStorage.setItem('poserButtonList', JSON.stringify(array));
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="name">
+                        Add poser Button
+                    </label>
+                    <input type="text" class="form-control" id="name" />
+                </div>
+                <button type="button" id="but1" class="btn btn-primary">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="but_list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
