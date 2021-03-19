@@ -6,44 +6,25 @@
 
     <style>
         body {
-            height: 300px;
-            width: 300px;
+            width: 350px;
             padding: 0;
         }
     </style>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("but1").click(function () {
-                let array = [];
-                array.push($("#name").val());
-                localStorage.setItem('poserButtonList', JSON.stringify(array));
-            });
-
-        });
-    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="form-group">
-                    <label for="name">
-                        Add poser Button
-                    </label>
-                    <input type="text" class="form-control" id="name" />
+                <div class="jumbotron">
+                    <h3>
+                        Poser Extensions
+                    </h3>
+                    <img src="img/icon.png">
+                    <div>By James Chang</div>
                 </div>
-                <button type="button" id="but1" class="btn btn-primary">
-                    Submit
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div id="but_list"></div>
             </div>
         </div>
     </div>
